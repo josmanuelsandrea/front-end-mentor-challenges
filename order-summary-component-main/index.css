@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* Colors */
+    --Pale-blue: rgb(224, 232, 255);
+    --Bright-blue: rgb(56, 41, 224);
+    --Bright-blue-transparent: rgb(56, 41, 224, .6);
+    
+    --Very-pale-blue: rgb(245, 247, 255);
+    --Desaturated-blue: rgb(114, 128, 167);
+    --Dark-blue: rgb(31, 47, 86);
+}
+
+.main__container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: var(--Pale-blue);
+}
+
+.payment__card {
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1.3em 1.3em 1.3em 1.3em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+@media screen and (max-width: 375px){
+    .payment__card {
+        width: 20em;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .payment__card {
+        width: 18em;
+    }
+}
+
+.payment__card__svg {
+    width: 100%;
+}
+
+.payment__card__svg img {
+    width: 100%;
+    border-radius: 1.3em 1.3em 0 0;
+}
+
+.payment__card__text {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.3em;
+}
+
+.text__title {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: .9em;
+    color: var(--Dark-blue);
+}
+
+.text__description {
+    color: var(--Desaturated-blue);
+    text-align: center;
+    width: 80%;
+    line-height: 1.6em;
+}
+
+@media screen and (max-width: 375px){
+    .text__description {
+        width: 90%;
+    }
+}
+
+.payment__card__plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .8em;
+    margin: 1.3em 10%;
+    font-family: 'Outfit', sans-serif;
+}
+
+.left__side {
+    display: flex;
+    align-items: center;
+}
+
+.left__side__icon {
+    display: flex;
+}
+
+.left__side__plan_details {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-left: 1.3em;
+}
+
+.details__plan {
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+.details__price {
+    color: var(--Desaturated-blue);
+}
+
+.right__side__change {
+    font-weight: 600;
+    color: var(--Bright-blue);
+    font-size: 1.1em;
+}
+
+.right__side__change:hover {
+    text-decoration: none;
+    color: var(--Bright-blue-transparent);
+}
+
+.payment__card__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    margin: .9em 0 1.8em 0;
+}
+
+@media screen and (max-width: 375px){
+    .payment__card {
+        width: 18em;
+    }
+
+    .right__side__change {
+        font-size: .95em;
+    }
+}
+
+.proceed__payment {
+    width: 75%;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-size: .9em;
+    font-weight: 600;
+    padding: .9em 0;
+    border: none;
+    border-radius: .3em;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    transition: .5s ease background;
+}
+
+.proceed__payment:hover {
+    background-color: var(--Bright-blue-transparent);
+}
+
+.cancel__order {
+    margin-top: 1.9em;
+    border: none;
+    background: none;
+    font-size: 1.1em;
+    color: var(--Desaturated-blue);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .1s color ease;
+}
+
+.cancel__order:hover {
+    color: var(--Dark-blue);
+}
