@@ -1,0 +1,21 @@
+.card-back {
+    transform: translateX(25%);
+}
+
+.card-back-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    z-index: 2;
+    height: calc(100% - 1.3em);
+    max-height: 100%;
+    max-width: 100%;
+    margin: 1.3em;
+    font-family: 'Outfit', sans-serif;
+}
+
+.behind-card-number {
+    height: 100%;
+    transform: translateX(84%) translateY(40%);
+}

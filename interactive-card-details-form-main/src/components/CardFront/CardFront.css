@@ -1,0 +1,59 @@
+.card-front-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    z-index: 2;
+    height: calc(100% - 1.3em);
+    max-height: 100%;
+    max-width: 100%;
+    margin: 1.3em;
+    font-family: 'Outfit', sans-serif;
+}
+
+.circles-container {
+    display: flex;
+    align-items: center;
+}
+
+.card-front-info .circles:first-child {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: var(--White);
+}
+
+.card-front-info .circles:nth-child(2) {
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 100%;
+    border: 1px solid var(--White);
+    margin-left: 1em;
+}
+
+.card-front-info__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.data__number {
+    width: 100%;
+    margin: 1em 0;
+    font-size: 2.1em;
+    font-weight: 300;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+}
+
+.data__name-and-date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.data__name-and-date__name, .data__name-and-date__date {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
