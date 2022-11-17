@@ -3,13 +3,17 @@ import './Message.css'
 const Message = ({ notification_data }) => {
 	const { action_type, ...data } = notification_data
 
+	if (action_type === 'POST-REACTION'){
+		console.log(action_type)
+	}
+
 	return (
 		<>
 			<div className='notification__message'>
 				<p>
 					<span className="person-name">{data.person_name} </span>
 					<span className="message">{data.action_message} </span>
-					{data.related_element ? <span className="related-element">{data.related_element}</span> : null}
+					{data.related_element ? <span className={(action_type === "POST-REACTION") ? "related-post" : "related-element"}>{data.related_element}</span> : null}
 					{data.unread ? <span className="notification_active"></span> : null}
 				</p>
 				<p className="minutes-ago">{data.minutes_ago}</p>
