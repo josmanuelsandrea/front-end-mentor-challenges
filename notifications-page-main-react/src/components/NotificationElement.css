@@ -1,0 +1,22 @@
+.notification__element {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--White);
+    padding: .4em .4em;
+    border-radius: .5em;
+}
+
+.notification__element.active {
+    background-color: var(--Very-light-grayish-blue);
+}
+
+.notification__flexbox {
+    display: flex;
+    width: 100%;
+}
+
+.notification__image img {
+    width: 3.5em;
+}
+

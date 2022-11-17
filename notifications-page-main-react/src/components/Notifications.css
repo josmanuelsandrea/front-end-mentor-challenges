@@ -1,0 +1,68 @@
+.notifications {
+    width: 60%;
+    padding: 1.3em 1.3em;
+    background: var(--White);
+    border-radius: .5em;
+}
+
+@media screen and (max-width: 1020px){
+    .notifications {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .notifications {
+        width: 95%;
+    }
+}
+
+.notifications__top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Outfit', sans-serif;
+    padding-bottom: 1.3em;
+}
+
+.notifications__top-bar .top-bar__title {
+    display: flex;
+    justify-content: center;
+}
+
+.notifications__top-bar .top-bar__title .text {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 425px){
+    .notifications__top-bar .top-bar__title .text {
+        font-size: 1.4em;
+    }
+}
+
+.notifications__top-bar .top-bar__title .number {
+    background-color: var(--Blue);
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    border: 100%;
+    padding: 0 .5em;
+    margin-left: .7em;
+    border-radius: 1em;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.notifications__top-bar .mark_as_read {
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.notifications__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
