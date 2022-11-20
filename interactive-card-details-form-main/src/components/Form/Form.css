@@ -41,8 +41,8 @@
 }
 
 .text-field label {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.3em;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1em;
     color: var(--Very-dark-violet);
     margin-bottom: .9em;
 }
@@ -59,12 +59,16 @@
 
 .field-error {
     color: #e53935;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin-top: .5em;
 }
 
 .text-field input.ERROR {
     border: 1px solid #e53935;
+}
+
+.card_form input:focus {
+    border: 1px solid linear-gradient(#e66465, #9198e5);
 }
 
 .form__security-fields {
@@ -78,7 +82,7 @@
 }
 
 .exp__date__fields label {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: .9em;
     color: var(--Very-dark-violet);
     margin-bottom: 1.2em;
@@ -111,7 +115,7 @@
 }
 
 .cvc__field label {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: .9em;
     color: var(--Very-dark-violet);   
     margin-bottom: 1em;
@@ -136,7 +140,7 @@
     color: var(--White);
     font-size: 1.2em;
     padding: 1em 1.2em;
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     border-radius: .4em;
     margin-top: 2em;
 }

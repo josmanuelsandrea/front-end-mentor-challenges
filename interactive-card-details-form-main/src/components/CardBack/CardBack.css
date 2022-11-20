@@ -17,6 +17,6 @@
     transform: translateX(84%) translateY(45%);
     height: 100%;
     color: var(--White);
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     pointer-events: none;
 }
