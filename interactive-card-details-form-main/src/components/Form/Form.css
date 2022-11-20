@@ -1,0 +1,142 @@
+.card_form {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1046px){
+    .card_form {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 816px){
+    .card_form {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 794px){
+    .card_form {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 357px){
+    .card_form {
+        font-size: .9em;
+    }
+}
+
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2em 0;
+}
+
+.text-field:first-child {
+    margin: 0 0;
+}
+
+.text-field label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3em;
+    color: var(--Very-dark-violet);
+    margin-bottom: .9em;
+}
+
+.text-field input {
+    border: 1px solid var(--Dark-grayish-violet);
+    font-size: 1.2em;
+    height: 2em;
+    width: 100%;
+    border-radius: .4em;
+    padding: 0 .5em;
+    text-transform: uppercase;
+}
+
+.field-error {
+    color: #e53935;
+    font-family: 'Outfit', sans-serif;
+    margin-top: .5em;
+}
+
+.text-field input.ERROR {
+    border: 1px solid #e53935;
+}
+
+.form__security-fields {
+    display: flex;
+    gap: 1.6em;
+}
+
+.exp__date__fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp__date__fields label {
+    font-family: 'Outfit', sans-serif;
+    font-size: .9em;
+    color: var(--Very-dark-violet);
+    margin-bottom: 1.2em;
+}
+
+.exp__date__fields__input {
+    display: flex;
+    gap: .5em;
+}
+
+.exp__date__fields__input input {
+    border: 1px solid var(--Dark-grayish-violet);
+    font-size: 1.2em;
+    height: 2em;
+    width: 4em;
+    border-radius: .4em;
+    padding: 0 .5em;
+}
+
+.exp__date__fields__input input.ERROR {
+    border: 1px solid #e53935;
+}
+
+
+.cvc__field {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cvc__field label {
+    font-family: 'Outfit', sans-serif;
+    font-size: .9em;
+    color: var(--Very-dark-violet);   
+    margin-bottom: 1em;
+}
+
+.cvc__field input {
+    border: 1px solid var(--Dark-grayish-violet);
+    font-size: 1.2em;
+    height: 2em;
+    width: 100%;
+    border-radius: .4em;
+    padding: 0 .5em;
+}
+
+.cvc__field input.ERROR {
+    border: 1px solid #e53935;
+}
+
+.card_form button[type="submit"]{
+    border: none;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    font-size: 1.2em;
+    padding: 1em 1.2em;
+    font-family: 'Outfit', sans-serif;
+    border-radius: .4em;
+    margin-top: 2em;
+}

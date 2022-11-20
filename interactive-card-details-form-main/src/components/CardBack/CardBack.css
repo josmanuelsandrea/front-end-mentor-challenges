@@ -1,21 +1,22 @@
 .card-back {
+    background-image: url("/public/images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transform: translateX(25%);
+    border-radius: 1.3em;
 }
 
-.card-back-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    z-index: 2;
-    height: calc(100% - 1.3em);
-    max-height: 100%;
-    max-width: 100%;
-    margin: 1.3em;
-    font-family: 'Outfit', sans-serif;
+@media screen and (max-width: 794px){
+    .card-back {
+        transform: translateX(0%);
+    }
 }
 
-.behind-card-number {
+.card-CVC {
+    transform: translateX(84%) translateY(45%);
     height: 100%;
-    transform: translateX(84%) translateY(40%);
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+    pointer-events: none;
 }

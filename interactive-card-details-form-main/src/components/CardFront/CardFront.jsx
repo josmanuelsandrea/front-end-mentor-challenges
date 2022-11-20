@@ -1,21 +1,18 @@
 import './CardFront.css'
 
-const CardFront = () => {
+const CardFront = ({ credentials }) => {
     return (
         <div className='card-front'>
-            <div className='card-img'>
-                <img src="/images/bg-card-front.png" alt="bg-card-front" />
-            </div>
-            <div className='card-front-info'>
-                <div className='circles-container'>
-                    <span className='circles'></span>
-                    <span className='circles'></span>
+            <div className='card-info'>
+                <div className='circles'>
+                    <span className='circle'></span>
+                    <span className='circle'></span>
                 </div>
-                <div className='card-front-info__data'>
-                    <p className='data__number'>0000 0000 0000 0000</p>
-                    <div className='data__name-and-date'>
-                        <p className='data__name-and-date__name'>Jane Appleseed</p>
-                        <p className='data__name-and-date__date'>00/00</p>
+                <div className='card-info-nd'>
+                    <p className='card-number'>{credentials.card_number === '' ? '0000 0000 0000 0000' : credentials.card_number }</p>
+                    <div className='card-date-name'>
+                        <p className='card-name'>{credentials.card_holder}</p>
+                        <p className='card-date'>{credentials.card_month_expiration}/{credentials.card_year_expiration}</p>
                     </div>
                 </div>
             </div>

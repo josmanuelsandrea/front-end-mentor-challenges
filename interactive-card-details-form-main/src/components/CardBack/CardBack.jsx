@@ -1,16 +1,9 @@
 import './CardBack.css'
 
-const CardBack = () => {
+const CardBack = ({ credentials }) => {
     return (
         <div className='card-back'>
-            <div className='card-img'>
-                <img src="/images/bg-card-back.png" alt="bg-card-front" />
-            </div>
-            <div className='card-back-info'>
-                <div className='behind-card-number'>
-                    <p>000</p>
-                </div>
-            </div>
+            <div className='card-CVC'>{credentials.card_security_code}</div>
         </div>
     )
 }
